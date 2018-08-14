@@ -8,13 +8,19 @@ export default class ComponentA extends Component{
     }
   }
 
+  countIncrement(){
+    this.setState({
+      clickCount:this.state.clickCount+1
+    })
+  }
+
   render(){
     return (
       <div>
         <form onSubmit={this.countIncrement}>
           <button type="submit">click me</button>
         </form>
-        <div></div>
+        <div>{this.state.clickCount}</div>
       </div>
     )
   }
