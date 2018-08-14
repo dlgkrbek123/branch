@@ -6,4 +6,5 @@ ReactDOM.render(
 (<div>
   <ComponentA/>
   <ComponentB/>
+  <ComponentC/>
 </div>),document.getElementById('wrapper'))
